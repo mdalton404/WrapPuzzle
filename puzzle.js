@@ -138,8 +138,13 @@
 		}
 		var c = complete();
 		if(c == ROWS * COLS){
-			statusP.innerHTML = "Success! Close Window to continue";
-			alert("Success! Close Window to continue");
+			//statusP.innerHTML = "Success! Close Window to continue";
+			var delay=500; //0.5 second
+
+			setTimeout(function() {
+			  alert("Success! Close Window to continue");
+			}, delay);
+			
 		} else {
 			var p = ((100 / (ROWS * COLS)) * c) >> 0;
 			statusP.innerHTML = p + "% Complete";
