@@ -138,7 +138,8 @@
 		}
 		var c = complete();
 		if(c == ROWS * COLS){
-			statusP.innerHTML = "Great Success!";
+			statusP.innerHTML = "Success! Close Window to continue";
+			alert("Success! Close Window to continue");
 		} else {
 			var p = ((100 / (ROWS * COLS)) * c) >> 0;
 			statusP.innerHTML = p + "% Complete";
