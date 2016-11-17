@@ -138,7 +138,7 @@
 		}
 		var c = complete();
 		if(c == ROWS * COLS){
-			statusP.innerHTML = "Success! Close Window to continue";
+			statusP.innerHTML = "Success! Close the tab to continue";
 			var delay=500; //0.5 second
 
 			setTimeout(function() {
